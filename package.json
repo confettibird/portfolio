@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "normalize.css": "^8.0.0",
+    "vue": "^2.5.17",
+    "vue-smooth-scroll": "^1.0.13",
+    "vuewordcloud": "^18.7.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.3",
+    "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "@vue/eslint-config-prettier": "^3.0.3",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-resources-loader": "^1.2.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

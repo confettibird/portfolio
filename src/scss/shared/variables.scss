@@ -1,0 +1,31 @@
+$num-sections: 4;
+
+// Colors
+$color-font: #023183;
+$color-base: #F2C407;
+$color-complement: complement($color-base);
+
+$color-light-0: #fff;
+$color-light-1: lighten($color-base, 45%);
+$color-light-2: lighten($color-base, 40%);
+$color-light-3: lighten($color-base, 30%);
+$color-light-4: lighten($color-base, 15%);
+
+// Fonts
+$font-logo: 'Habibi', sans-serif;
+$font-title: 'Pavanam', sans-serif;
+$font-content: 'Rubik', sans-serif;
+$font-section-title: 'Nunito', sans-serif;
+
+// Layout
+$slope-height: 150px;
+$section-height: 400px;
+
+// min-widths
+$xtra-lrg-screen: 1300px;
+$lrg-screen: 960px;
+
+// max-widths
+$md-screen: 768px;
+$sm-screen: 620px;
+$xsm-screen: 499px;

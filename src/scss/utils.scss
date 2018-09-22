@@ -1,0 +1,51 @@
+.text {
+  font: normal 18px $font-content;
+  color: $color-font;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.shadowed {
+  @include shadow(#888888)
+}
+
+.centered {
+  text-align: center;
+}
+
+// center horizontally and vertically
+.hv-centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+// cropped and centered thumbnails
+// http://jonathannicol.com/blog/2014/06/16/centre-crop-thumbnails-with-css/
+
+.thumbnail {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
