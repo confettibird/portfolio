@@ -137,12 +137,15 @@ export default {
         height: 50%;
         width: 60%;
       }
+      @media (max-height: 380px) {
+        display: none;
+      }
     }
 
     .logo--mobile {
       margin-top: 8%;
       text-align: center;
-      font-size: 3.5vh;
+      font-size: 3.5vw;
 
       display: none;
       @media (max-width: $lrg-screen) {
@@ -164,18 +167,12 @@ export default {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
 
-      font-size: 2.2vh;
+      font-size: 2.2vw;
       text-align: center;
 
       display: none;
       @media (max-width: $lrg-screen) {
         display: block;
-      }
-      @media (max-width: $sm-screen) {
-        font-size: 0.9rem;
-      }
-      @media (max-width: $xsm-screen) {
-        font-size: 0.7rem;
       }
     }
 

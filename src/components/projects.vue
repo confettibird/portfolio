@@ -144,12 +144,13 @@ export default {
   align-self: center;
   overflow: hidden;
   justify-self: center;
+  box-shadow: 0 0 10px 1px #7C7A6F;
+  border-radius: 5px;
   .card {
     position: relative;
     display: inline-block;
     text-align: center;
     cursor: pointer;
-    border: solid 1px #324549;
     border-radius: 5px;
     img {
       vertical-align: bottom;
@@ -166,24 +167,26 @@ export default {
     bottom: 0;
     left: 0;
     .project--description {
-      text-align: left;
+      text-align: center;
       font-size: 2vw;
       color: $color-font;
       font-family: $font-content;
       margin: 5%;
 
       ul {
-        margin: 5px;
+        display: inline-block;
+        text-align: left;
+        margin: 5%;
       }
 
       li {
-        font-size: 1.3vw;
+        font-size: 1.7vw;
         list-style-position: inside;
         margin-left: 25px;
       }
 
       .devText {
-        font-size: 1.2vw;
+        font-size: 1.4vw;
         a {
           text-decoration: none;
           color: $color-font;
