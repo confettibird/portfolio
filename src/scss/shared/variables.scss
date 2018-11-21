@@ -1,15 +1,16 @@
-$num-sections: 4;
+$num-sections: 5;
 
 // Colors
 $color-font: #023183;
 $color-base: #F2C407;
-$color-complement: complement($color-base);
+$color-complement: #4db4d7;
 
 $color-light-0: #fff;
-$color-light-1: lighten($color-base, 45%);
-$color-light-2: lighten($color-base, 40%);
-$color-light-3: lighten($color-base, 30%);
-$color-light-4: lighten($color-base, 15%);
+$color-light-1: lighten($color-base, 44%);
+$color-light-2: lighten($color-base, 38%);
+$color-light-3: lighten($color-base, 28%);
+$color-light-4: lighten($color-base, 18%);
+$color-light-5: lighten($color-base, 8%);;
 
 // Fonts
 $font-logo: 'Habibi', sans-serif;

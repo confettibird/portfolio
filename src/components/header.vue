@@ -11,7 +11,7 @@
       </div>
       <div class="rightHomePage" id="home-page" :style="{ backgroundColor: color }">
         <div class="logo logo--mobile">Noelyn Stephens</div>
-        <div class="hv-centered homeImg" style="background-color:white;"></div>
+        <div class="hv-centered homeImg"></div>
         <div class="text services--mobile">Visual Design &amp; Web Development</div>
         </div>
     </div>

@@ -33,21 +33,39 @@ const cards = [
   {
     front: "lucho_portfolio.png",
     back:
-      'Web Design and Development<br/><ul><li>Custom design mockups</li><li>HTML &amp; CSS markup</li><li> Custom Vue.js components</li></ul><p class="devText">Website currently in development</p>',
+      'Web Design<br/><ul><li>Complete Photoshop Design mockups</li><li>Prototype HTML &amp; CSS markup</li></ul><p class="devText">Website currently in development</p>',
     flipped: false
   },
   {
     front: "justyna_and_pedro.png",
     back:
-      'Web Design and Development<br/><ul><li>Custom design mockups and svgs</li><li>Customised OctoberCMS</li><li>Multilanguage</li><li>HTML &amp; CSS markup</li><li> Custom Vue.js components</li></ul><p class="devText">Website currently in development</p>',
+      'Web Design and Development<br/><ul><li>Complete Photoshop Design mockups and Illustrator SVGs</li><li>Customised OctoberCMS</li><li>Multilanguage</li><li>HTML &amp; CSS markup</li><li>Custom Vue.js components</li></ul><p class="devText"><a href="https://justynaandpedro.com/" target="_blank">View website</a></p>',
     flipped: false
   },
   {
-    front: "localBean.png",
+    front: "lilylaiScreenShot.png",
     back:
-      'Landing Page Design, Custom Icon and SVGs, Copywriting<br /><ul><li>Custom design using Photoshop</li><li>Custom Icons and SVGs using Illustrator</li><li>Custom design system</li></ul><p class="devText"><a href="/assets/img/projects/localBeanLandingPage.png" target="_blank">View fullsize image</a></p>',
+      'Web Design and Development<br/><ul><li>Wireframe, typography and color scheme selection</li><li>HTML &amp; CSS markup (SASS)</li><li>Custom Vue.js components</li><li>Customised HeadlessCMS backend</li></ul><p class="devText"><a href="https://www.lily-lai.com/" target="_blank">View website</a></p>',
     flipped: false
-  }
+  },
+  {
+    front: "logosScreenShot.png",
+    back:
+      'Logo Design<br/><ul><li>Logo mockups, typography, and color selections</li><li>Designed final business logos using Adobe Illustrator</li></ul><p class="devText"><a href="/assets/img/projects/logoCollection.jpg" target="_blank">View collection</a></p>',
+    flipped: false
+  },
+  {
+    front: "imageMapper.png",
+    back:
+      'Web Development<br/><ul><li>Developed application that assists web developers in making images into responsive SVG image maps</li><li>Developed a complete single page Vue.js applicaiton including HTML &amp; CSS markup (SASS)</li></ul><p class="devText"><a href="http://imagemapper.pageballoon.com/" target="_blank">View website</a></p>',
+    flipped: false
+  },
+  {
+    front: "inviteClip.png",
+    back:
+      'Custom Print Invitation<br/><ul><li>Designed space themed invitaiton using Adobe Illustrator</li><li>All SVG objects created from scratch</li></ul><p class="devText"><a href="/assets/img/projects/inviteFull.png" target="_blank">View invite</a></p>',
+    flipped: false
+  },
 ];
 export default {
   data() {

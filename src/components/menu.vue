@@ -9,11 +9,12 @@
     <transition name="menu" enter-active-class="animated slideInRight" leave-active-class="animated slideOutRight">
       <div class="menu-content" v-if="displayMenu">
         <div class="menu-slope"></div>
-        <div class="hv-centered menu-wrapper">
+        <div class="menu-center menu-wrapper">
           <ul class="menu-items" @click="toggleMenu">
             <li><a class="navItem" href="#about" v-smooth-scroll>About</a></li>
             <li><a class="navItem" href="#skills" v-smooth-scroll>Skills</a></li>
             <li><a class="navItem" href="#projects" v-smooth-scroll>Projects</a></li>
+            <li><a class="navItem" href="#reviews" v-smooth-scroll>Reviews</a></li>
             <li><a class="navItem" href="#contact" v-smooth-scroll>Contact</a></li>
           </ul>
         </div>
@@ -67,7 +68,20 @@ export default {
   bottom: 0;
 }
 
-// todo: fix color scheme
+.menu-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  @media (max-width: $md-screen) {
+    top: 40%;
+  }
+  @media (max-width: $sm-screen) {
+    top: 30%;
+  }
+}
+
 .menu-items {
   font: normal 28px $font-section-title;
   li {

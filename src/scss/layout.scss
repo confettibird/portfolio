@@ -20,9 +20,12 @@
 }
 
 .slope--5 {
-  @include slope($color-light-4, #fdf3c8, up);
+  @include slope($color-light-4, $color-light-5, up);
 }
-
+// footer slope
+.slope--6 {
+  @include slope($color-light-5, $color-light-2, down);
+}
 section {
   position: relative;
   width: 100%;
@@ -44,6 +47,11 @@ section {
 .section--4 {
   background-color: $color-light-4;
 }
+
+.section--5 {
+  background-color: $color-light-5;
+}
+
 
 .section__body {
   width: 90%;
