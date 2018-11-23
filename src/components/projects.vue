@@ -33,7 +33,7 @@ const cards = [
   {
     front: "lucho_portfolio.png",
     back:
-      'Web Design<br/><ul><li>Complete Photoshop Design mockups</li><li>Prototype HTML &amp; CSS markup</li></ul><p class="devText">Website currently in development</p>',
+      'Web Design<br/><ul><li>Complete Photoshop Design mockups</li><li>Prototype HTML &amp; CSS</li></ul><p class="devText">Website currently in development</p>',
     flipped: false
   },
   {
