@@ -39,13 +39,13 @@ const cards = [
   {
     front: "justyna_and_pedro.png",
     back:
-      'Web Design and Development<br/><ul><li>Complete Photoshop Design mockups and Illustrator SVGs</li><li>Customised OctoberCMS</li><li>Multilanguage</li><li>HTML &amp; CSS markup</li><li>Custom Vue.js components</li></ul><p class="devText"><a href="https://justynaandpedro.com/" target="_blank">View website</a></p>',
+      'Web Design and Development<br/><ul><li>Bespoke Photoshop Design mockups and Illustrator SVGs</li><li>Customised OctoberCMS</li><li>Multilanguage</li><li>HTML &amp; CSS (SASS)</li><li>Custom Vue.js components</li></ul><p class="devText"><a href="https://justynaandpedro.com/" target="_blank">View website</a></p>',
     flipped: false
   },
   {
     front: "lilylaiScreenShot.png",
     back:
-      'Web Design and Development<br/><ul><li>Wireframe, typography and color scheme selection</li><li>HTML &amp; CSS markup (SASS)</li><li>Custom Vue.js components</li><li>Customised HeadlessCMS backend</li></ul><p class="devText"><a href="https://www.lily-lai.com/" target="_blank">View website</a></p>',
+      'Web Design and Development<br/><ul><li>Wireframe, typography and color scheme selection</li><li>Custum HTML &amp; CSS (SASS)</li><li>Custom Vue.js components</li><li>Customised HeadlessCMS backend</li></ul><p class="devText"><a href="https://www.lily-lai.com/" target="_blank">View website</a></p>',
     flipped: false
   },
   {
