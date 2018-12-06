@@ -29,7 +29,7 @@ p {
 }
 .dots{
   display: inline-block;
-  margin: 5px;
+  margin: 5px; 
   height:10px;
   width: 10px;
   border-radius: 50%;
