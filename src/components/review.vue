@@ -77,6 +77,10 @@ export default {
           text: 'Noelyn created an informative, easy to navigate, and beautiful website for us, which was also translated into three different languages. Because we live in different cities, communication was key and she never let us down. Always ready to help, with strong attention to details, she guided us through the whole process and made complicated things feel so easy. Her personalised graphics added a special touch to the site and fit nicely with our wedding style.',
           name: 'Justyna W.'
         },
+        {
+          text: 'Noelyn was very efficient and patient to work with. She quickly understood the aesthetic I was going after and gave me lots of options. This felt like a collaboration, and I am so appreciative of the time she took to walk me through every step.',
+          name: 'Lily L.'
+        },
       ],
       index: 0
     }
