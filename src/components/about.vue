@@ -8,7 +8,7 @@
       </div>
       <div class="section__body section_body--about">
         <div class="about-text centered text">
-          Originally from South Florida, I am a visual designer and web developer currently based in the UK. I specialize in creating designs that are clean, yet warm and engaging for users. I am available for freelance projects as well as full-time contracts. Have a look at some of my recent projects and feel free to get in contact.
+          Originally from South Florida, I completed my undergraduate degree in philosophy at the University of Chicago and my master’s degree in cognitive psychology and decision making at University College London. I am a Bristol based visual designer and web developer specializing in designs that are clean, yet warm and engaging for users. I am available for short-term projects as well as full-time contracts. Feel free to get in contact.
         </div>
         <div class="about-image round shadowed thumbnail">
           <img src="/assets/img/portfolioPhoto.jpg" class="portrait" />
