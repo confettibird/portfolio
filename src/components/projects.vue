@@ -57,7 +57,7 @@ const cards = [
   {
     front: "imageMapper.png",
     back:
-      'Web Development<br/><ul><li>Developed application that assists web developers in making images into responsive SVG image maps</li><li>Developed a complete single page Vue.js applicaiton including HTML &amp; CSS (SASS)</li></ul><p class="devText"><a href="https:https://imagemapper.noc.io/" target="_blank">View website</a></p>',
+      'Web Development<br/><ul><li>Developed application that assists web developers in making images into responsive SVG image maps</li><li>Developed a complete single page Vue.js applicaiton including HTML &amp; CSS (SASS)</li></ul><p class="devText"><a href="https://imagemapper.noc.io/" target="_blank">View website</a></p>',
     flipped: false
   },
   {
