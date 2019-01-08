@@ -6,7 +6,7 @@
         <div class="professions itemB">
         </div>
         <div class="itemC">
-        <p class="text">Visual Design &amp; Web Development</p>
+        <p class="text services--xl">Visual Design &amp; Web Development</p>
         </div>
       </div>
       <div class="rightHomePage" id="home-page" :style="{ backgroundColor: color }">
@@ -66,7 +66,17 @@ export default {
   .logo {
     color: $color-font;
     font: normal 1.75rem $font-logo;
+    @media (min-width: $xtra-lrg-screen) {
+      font-size: 1.8vw;
+    }
   }
+
+  .services--xl {
+    font-size: 18px;
+    @media (min-width: $xtra-lrg-screen) {
+      font-size: 1.2vw;
+      }
+    }
 
   .rightHomePage,
   .leftHomePage {
@@ -95,7 +105,7 @@ export default {
     .itemC {
       grid-column: 1;
       grid-row: 3;
-      width: 300px;
+      width: 400px;
       justify-self: start;
       align-self: end;
     }

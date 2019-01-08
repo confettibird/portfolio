@@ -57,7 +57,7 @@ const cards = [
   {
     front: "imageMapper.png",
     back:
-      'Web Development<br/><ul><li>Developed application that assists web developers in making images into responsive SVG image maps</li><li>Developed a complete single page Vue.js applicaiton including HTML &amp; CSS (SASS)</li></ul><p class="devText"><a href="http://imagemapper.pageballoon.com/" target="_blank">View website</a></p>',
+      'Web Development<br/><ul><li>Developed application that assists web developers in making images into responsive SVG image maps</li><li>Developed a complete single page Vue.js applicaiton including HTML &amp; CSS (SASS)</li></ul><p class="devText"><a href="https:http://imagemapper.noc.io/" target="_blank">View website</a></p>',
     flipped: false
   },
   {
@@ -190,6 +190,9 @@ export default {
       color: $color-font;
       font-family: $font-content;
       margin: 5%;
+      @media (min-width: $xtra-lrg-screen) {
+        font-size: 1.5vw;
+      }
 
       ul {
         display: inline-block;
@@ -201,6 +204,9 @@ export default {
         font-size: 1.7vw;
         list-style-position: inside;
         margin-left: 25px;
+        @media (min-width: $xtra-lrg-screen) {
+          font-size: 1.25vw;
+        }
       }
 
       .devText {
@@ -213,6 +219,9 @@ export default {
           &:active {
             color: $color-font;
           }
+        }
+        @media (min-width: $xtra-lrg-screen) {
+          font-size: 1.1vw;
         }
       }
     }
