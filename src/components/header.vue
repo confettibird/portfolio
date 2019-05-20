@@ -167,7 +167,7 @@ export default {
       }
       @media (max-width: $xsm-screen) {
         margin-top: 20%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
 
@@ -196,7 +196,7 @@ export default {
       }
       @media (max-width: $xsm-screen) {
         /*margin-top: 10%;*/
-        font-size: .8rem;
+        font-size: .6rem;
       }
     }
 
