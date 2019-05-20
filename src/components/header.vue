@@ -155,34 +155,48 @@ export default {
     .logo--mobile {
       margin-top: 8%;
       text-align: center;
-      font-size: 3.5vw;
-
+      font-size: 2.3rem;
       display: none;
       @media (max-width: $lrg-screen) {
         display: block;
+        font-size: 2.2rem;
       }
       @media (max-width: $md-screen) {
         margin-top: 10%;
+        font-size: 2rem;
       }
       @media (max-width: $xsm-screen) {
         margin-top: 20%;
+        font-size: 1.5rem;
       }
     }
 
     .services--mobile {
       // position
       position: absolute;
-      bottom: 5%;
+      width: 100%;
+      bottom: 10%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-
-      font-size: 2.2vw;
+      font-size: 1.1rem;
       text-align: center;
-
       display: none;
       @media (max-width: $lrg-screen) {
         display: block;
+        font-size: 1.2rem;
+      }
+      @media (max-width: $md-screen) {
+        /*margin-top: 10%;*/
+        font-size: 1.1rem;
+      }
+      @media (max-width: $sm-screen) {
+        /*margin-top: 10%;*/
+        font-size: 1rem;
+      }
+      @media (max-width: $xsm-screen) {
+        /*margin-top: 10%;*/
+        font-size: .8rem;
       }
     }
 
