@@ -5,18 +5,18 @@
   }
 }
 .review:before {
-    content: "“";
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.1em;
-    vertical-align: -0.4em;
+  content: "“";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
 }
 .review:after {
-    content: "”";
-    font-size: 3em;
-    line-height: 0.3em;
-    margin-right: 0.1em;
-    vertical-align: -0.4em;
+  content: "”";
+  font-size: 3em;
+  line-height: 0.3em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
 }
 p {
   padding-bottom: 3%;
@@ -27,10 +27,10 @@ p {
     font-size: 18px !important;
   }
 }
-.dots{
+.dots {
   display: inline-block;
-  margin: 5px; 
-  height:10px;
+  margin: 5px;
+  height: 10px;
   width: 10px;
   border-radius: 50%;
   background-color: $color-complement;
@@ -39,7 +39,6 @@ p {
 .dot-active {
   background-color: lighten($color-complement, 25%);
 }
-
 </style>
 
 <template>
@@ -58,13 +57,17 @@ p {
             </p>
             <p>-{{ review.name }}</p>
           </div>
-          <div @click="index = i" v-for="(r, i) in reviews" :key="r.id" v-bind:class="['dots', i == index ? 'dot-active' : '']">
+          <div
+            @click="index = i"
+            v-for="(r, i) in reviews"
+            :key="r.id"
+            v-bind:class="['dots', i == index ? 'dot-active' : '']"
+          >
             <!--dot {{ i }}-->
           </div>
         </div>
       </div>
     </section>
-
   </div>
 </template>
 
@@ -74,20 +77,22 @@ export default {
     return {
       reviews: [
         {
-          text: 'Noelyn created an informative, easy to navigate, and beautiful website for us, which was also translated into three different languages. Because we live in different cities, communication was key and she never let us down. Always ready to help, with strong attention to details, she guided us through the whole process and made complicated things feel so easy. Her personalised graphics added a special touch to the site and fit nicely with our wedding style.',
-          name: 'Justyna W.'
+          text:
+            "Noelyn created an informative, easy to navigate, and beautiful website for us, which was also translated into three different languages. Because we live in different cities, communication was key and she never let us down. Always ready to help, with strong attention to details, she guided us through the whole process and made complicated things feel so easy. Her personalised graphics added a special touch to the site and fit nicely with our wedding style.",
+          name: "Justyna W."
         },
         {
-          text: 'Noelyn was very efficient and patient to work with. She quickly understood the aesthetic I was going after and gave me lots of options. This felt like a collaboration, and I am so appreciative of the time she took to walk me through every step.',
-          name: 'Lily L.'
-        },
+          text:
+            "Noelyn was very efficient and patient to work with. She quickly understood the aesthetic I was going after and gave me lots of options. This felt like a collaboration, and I am so appreciative of the time she took to walk me through every step.",
+          name: "Lily L."
+        }
       ],
       index: 0
-    }
+    };
   },
   computed: {
     review: function() {
-      return this.reviews[this.index]
+      return this.reviews[this.index];
     }
   }
 };

@@ -3,26 +3,30 @@
     <div class="slope slope--3"></div>
 
     <section id="projects" class="section--3">
-      <div class="section__title section__title--left">
-        Projects
-      </div>
+      <div class="section__title section__title--left">Featured</div>
       <div class="centered section__body">
-          <div id="projects-slider">
-            <div @click="backward()" class="leftArrow"></div>
-            <div class="projects--list" @click="toggleCard(card, false)" @mouseenter="toggleCard(card, true)">
-              <div class="card" key="front">
-                <img :src="'assets/img/projects/' + card.front"/>
-                <transition name="hover-transition"
-                    enter-active-class="animated fadeInUp"
-                    leave-active-class="animated fadeOutDown">
-                  <div v-show='card.flipped' class="card--back" key="back">
-                    <div class="project--description" v-html="card.back"></div>
-                  </div>
-                </transition>
-              </div>
+        <div id="projects-slider">
+          <div @click="backward()" class="leftArrow"></div>
+          <div
+            class="projects--list"
+            @click="toggleCard(card, false)"
+            @mouseenter="toggleCard(card, true)"
+          >
+            <div class="card" key="front">
+              <img :src="'assets/img/projects/' + card.front" />
+              <transition
+                name="hover-transition"
+                enter-active-class="animated fadeInUp"
+                leave-active-class="animated fadeOutDown"
+              >
+                <div v-show="card.flipped" class="card--back" key="back">
+                  <div class="project--description" v-html="card.back"></div>
+                </div>
+              </transition>
             </div>
-            <div @click="forward()" class="rightArrow"></div>
           </div>
+          <div @click="forward()" class="rightArrow"></div>
+        </div>
       </div>
     </section>
   </div>
@@ -31,58 +35,121 @@
 <script>
 const cards = [
   {
-    front: "lucho_portfolio.png",
-    back:
-      'Web Design<br/><ul><li>Photoshop Design mockups</li><li>Prototype HTML &amp; CSS</li></ul><p class="devText">Website currently in development</p>',
-    flipped: false
-  },
-  {
-    front: "justyna_and_pedro.png",
-    back:
-      'Web Design and Development<br/><ul><li>Bespoke Photoshop Design mockups and Illustrator SVGs</li><li>Customised OctoberCMS</li><li>Multilanguage</li><li>HTML &amp; CSS (SASS)</li><li>Custom Vue.js components</li></ul><p class="devText"><a href="https://justynaandpedro.com/" target="_blank">View website</a></p>',
-    flipped: false
-  },
-  {
     front: "lilylaiScreenShot.png",
-    back:
-      'Web Design and Development<br/><ul><li>Wireframe, typography and color scheme selection</li><li>Custum HTML &amp; CSS (SASS)</li><li>Custom Vue.js components</li><li>Customised HeadlessCMS backend</li></ul><p class="devText"><a href="https://www.lily-lai.com/" target="_blank">View website</a></p>',
-    flipped: false
+    back: `Web Design and Development
+            <ul>
+            <li>Wireframe, typography, and color scheme selection</li>
+            <li>Bespoke HTML &amp; CSS (SASS)</li>
+            <li>Custom Vue.js components</li>
+            <li>Customized HeadlessCMS backend</li>
+            </ul>
+            <p class="devText"><a href="https://www.lily-lai.com/" target="_blank">View website</a></p>`,
+    flipped: false,
   },
   {
-    front: "logosScreenShot.png",
-    back:
-      'Logo Design<br/><ul><li>Logo mockups, typography, and color selections</li><li>Designed final business logos using Adobe Illustrator</li></ul><p class="devText"><a href="/assets/img/projects/logoCollection.jpg" target="_blank">View collection</a></p>',
-    flipped: false
+    front: "seek.png",
+    back: `Front End Development
+            <ul>
+            <li>Lead developer of custom Wordpress blog design implementation</li>
+            <li>Bug fixes and maintenance tasks</li>
+            <li>Expanded sections of corporate website</li>
+            <li>Assisted in SEO audit and optimization</li>
+            </ul>
+            <p class="devText"><a href="https://www.seekcapital.com/blog/" target="_blank">View more</a></p>`,
+    flipped: false,
   },
   {
-    front: "imageMapper.png",
-    back:
-      'Web Development<br/><ul><li>Developed application that assists web developers in making images into responsive SVG image maps</li><li>Developed a complete single page Vue.js applicaiton including HTML &amp; CSS (SASS)</li></ul><p class="devText"><a href="https://imagemapper.noc.io/" target="_blank">View website</a></p>',
-    flipped: false
+    front: "lucho_portfolio.png",
+    back: `Web Design
+      <ul>
+      <li>Photoshop Design mockups</li>
+      <li>Color scheme and typography selection</li>
+      </ul>
+      <p class="devText">Website currently in development</p>`,
+    flipped: false,
+  },
+  // {
+  //   front: "euralis_map_editor.png",
+  //   back: `Front End Development and UX Design
+  //           <ul>
+  //           <li>UX Design of internal application that displays consultants according to region</li>
+  //           <li>Implemented design using Quasar framework and vue.js</li>
+  //           </ul>
+  //           <p class="devText"><a href="https://www.euralis.de/beraterkarte/" target="_blank">View company</a></p>`,
+  //   flipped: false
+  // },
+  {
+    front: "euralis_portal.png",
+    back: `Front End Development and UX Design
+            <ul>
+            <li>UX Design of "Mais and More! GOLD" customer portal for tracking customer rewards</li>
+            <li>Developed design using Quasar framework and vue.js</li>
+            <li>Implementation allowed the company to automate customer reward program</li>
+            </ul>
+            <p class="devText"><a href="https://www.euralis.de/beraterkarte/" target="_blank">View more</a></p>`,
+    flipped: false,
   },
   {
-    front: "inviteClip.png",
-    back:
-      'Custom Print Invitation<br/><ul><li>Designed space themed invitaiton using Adobe Illustrator</li><li>All SVG objects created from scratch</li></ul><p class="devText"><a href="/assets/img/projects/inviteFull.png" target="_blank">View invite</a></p>',
-    flipped: false
+    front: "carteblanche.png",
+    back: `Logo Design and UX Design
+        <ul>
+        <li>Created Type lock-up logo consistent with brand's refined, contemporary image</li>
+        <li>Created UX design using Adobe XD and Balsamiq</li>
+        </ul>
+        <p class="devText"><a href="https://www.carteblanchewines.com/" target="_blank">View more</a></p>`,
+    flipped: false,
   },
+  {
+    front: "hrc_cover.png",
+    back: `Web Development and UX design
+      <ul>
+      <li>Modernized and customized Wordpress theme for client website</li>
+      <li>Designed UX for intranet which allows members to sign up for lessons, announce events, organize equipment trades, etc.</li>
+      <li>Developed design using Quasar framework and vue.js</li>
+      </ul>
+      <p class="devText"><a href="https://hamburger-ruderinnen.de/" target="_blank">View website</a></p>`,
+    flipped: false,
+  },
+  {
+    front: "spivey.png",
+    back: `Web Development, UX design, Visual Design
+      <ul>
+       <li>Wireframe, typography, and color scheme selection</li>
+      <li>Bespoke HTML &amp; CSS (SASS)</li>
+      <li>Custom Vue.js components</li>
+      <li>Customized OctoberCMS backend</li>
+      </ul>
+      <p class="devText"><a href="https://spivey.wine/" target="_blank">View website</a></p>`,
+    flipped: false,
+  },
+  // {
+  //   front: "imageMapper.png",
+  //   back:
+  //     `Web Development and UX design
+  //     <ul>
+  //     <li>Developed application that assists web developers in making images into responsive SVG image maps</li>
+  //     <li>Developed a complete single page Vue.js application including HTML &amp; CSS (SASS)</li>
+  //     </ul>
+  //     <p class="devText"><a href="https://imagemapper.noc.io/" target="_blank">View website</a></p>`,
+  //   flipped: false
+  // }
 ];
 export default {
   data() {
     return {
       cards: cards,
-      index: 0
+      index: 0,
     };
   },
   methods: {
-    toggleCard: function(card, hover) {
+    toggleCard: function (card, hover) {
       if (hover) {
         card.flipped = true;
       } else {
         card.flipped = !card.flipped;
       }
     },
-    forward: function() {
+    forward: function () {
       this.card.flipped = false;
       if (this.index >= this.cards.length - 1) {
         this.index = 0;
@@ -90,20 +157,20 @@ export default {
         this.index += 1;
       }
     },
-    backward: function() {
+    backward: function () {
       this.card.flipped = false;
       if (this.index > 0) {
         this.index -= 1;
       } else {
         this.index = this.cards.length - 1;
       }
-    }
+    },
   },
   computed: {
-    card: function() {
+    card: function () {
       return this.cards[this.index];
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -162,7 +229,7 @@ export default {
   align-self: center;
   overflow: hidden;
   justify-self: center;
-  box-shadow: 0 0 10px 1px #7C7A6F;
+  box-shadow: 0 0 10px 1px #7c7a6f;
   border-radius: 5px;
   .card {
     position: relative;

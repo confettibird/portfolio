@@ -7,17 +7,30 @@
         <div class="centered skill-grid">
           <div id="wordcloud">
             <vue-word-cloud
-            :words="[['HTML', 6], ['Sass', 6], ['JavaScript', 4], ['CSS', 6], ['Vue.js', 5], ['OctoberCMS', 5], ['Photoshop', 4], ['GraphQL', 3], ['Headless CMS', 3], ['Illustrator', 4], ['InDesign', 3]]"
-            :color="([, weight]) => weight > 5 ? '#d09c2d' : weight > 4 ? '#64abd6' : '#128d9d'"
-            font-family="Nunito"/>
+              :words="[
+                ['HTML', 5],
+                ['JavaScript', 4],
+                ['Vue.js', 4],
+                ['Wordpress', 3],
+                ['Photoshop', 4],
+                ['REST APIs', 3],
+                ['CSS/Sass', 5],
+                ['Adobe XD', 4],
+                ['Illustrator', 4],
+                ['InDesign', 3]
+              ]"
+              :color="
+                ([, weight]) =>
+                  weight > 4 ? '#d09c2d' : weight > 3 ? '#64abd6' : '#128d9d'
+              "
+              spacing=".2"
+              font-family="Nunito"
+            />
           </div>
         </div>
       </div>
-      <div class="section__title section__title--right">
-        Skills
-      </div>
+      <div class="section__title section__title--right">Skills</div>
     </section>
-
   </div>
 </template>
 

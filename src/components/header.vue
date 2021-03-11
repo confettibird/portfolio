@@ -3,17 +3,22 @@
     <div class="section__home">
       <div class="leftHomePage">
         <div class="logo itemA">Noelyn Stephens</div>
-        <div class="professions itemB">
-        </div>
+        <div class="professions itemB"></div>
         <div class="itemC">
-        <p class="text services--xl">Visual Design &amp; Web Development</p>
+          <p class="text services--xl">Visual Design &amp; Web Development</p>
         </div>
       </div>
-      <div class="rightHomePage" id="home-page" :style="{ backgroundColor: color }">
+      <div
+        class="rightHomePage"
+        id="home-page"
+        :style="{ backgroundColor: color }"
+      >
         <div class="logo logo--mobile">Noelyn Stephens</div>
         <div class="hv-centered homeImg"></div>
-        <div class="text services--mobile">Visual Design &amp; Web Development</div>
+        <div class="text services--mobile">
+          Visual Design &amp; Web Development
         </div>
+      </div>
     </div>
   </div>
 </template>
@@ -75,8 +80,8 @@ export default {
     font-size: 18px;
     @media (min-width: $xtra-lrg-screen) {
       font-size: 1.2vw;
-      }
     }
+  }
 
   .rightHomePage,
   .leftHomePage {
@@ -196,7 +201,7 @@ export default {
       }
       @media (max-width: $xsm-screen) {
         /*margin-top: 10%;*/
-        font-size: .6rem;
+        font-size: 0.6rem;
       }
     }
 

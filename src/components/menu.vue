@@ -1,21 +1,33 @@
 <template>
   <div id="navigation">
-    <div @click="toggleMenu()" id="menu-icon" :class="{'open': displayMenu }">
+    <div @click="toggleMenu()" id="menu-icon" :class="{ open: displayMenu }">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <transition name="menu" enter-active-class="animated slideInRight" leave-active-class="animated slideOutRight">
+    <transition
+      name="menu"
+      enter-active-class="animated slideInRight"
+      leave-active-class="animated slideOutRight"
+    >
       <div class="menu-content" v-if="displayMenu">
         <div class="menu-slope"></div>
         <div class="menu-center menu-wrapper">
           <ul class="menu-items" @click="toggleMenu">
             <li><a class="navItem" href="#about" v-smooth-scroll>About</a></li>
-            <li><a class="navItem" href="#skills" v-smooth-scroll>Skills</a></li>
-            <li><a class="navItem" href="#projects" v-smooth-scroll>Projects</a></li>
-            <li><a class="navItem" href="#reviews" v-smooth-scroll>Reviews</a></li>
-            <li><a class="navItem" href="#contact" v-smooth-scroll>Contact</a></li>
+            <li>
+              <a class="navItem" href="#skills" v-smooth-scroll>Skills</a>
+            </li>
+            <li>
+              <a class="navItem" href="#projects" v-smooth-scroll>Projects</a>
+            </li>
+            <li>
+              <a class="navItem" href="#reviews" v-smooth-scroll>Reviews</a>
+            </li>
+            <li>
+              <a class="navItem" href="#contact" v-smooth-scroll>Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -68,7 +80,7 @@ export default {
   bottom: 0;
 }
 
-.menu-center{
+.menu-center {
   position: absolute;
   left: 50%;
   top: 50%;
