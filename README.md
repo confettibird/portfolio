@@ -19,3 +19,7 @@ npm run build
 ```
 npm run lint
 ```
+
+### Deploy
+
+Push to Github on the master branch

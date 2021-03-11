@@ -44,7 +44,7 @@ const cards = [
             <li>Customized HeadlessCMS backend</li>
             </ul>
             <p class="devText"><a href="https://www.lily-lai.com/" target="_blank">View website</a></p>`,
-    flipped: false,
+    flipped: false
   },
   {
     front: "seek.png",
@@ -56,7 +56,7 @@ const cards = [
             <li>Assisted in SEO audit and optimization</li>
             </ul>
             <p class="devText"><a href="https://www.seekcapital.com/blog/" target="_blank">View more</a></p>`,
-    flipped: false,
+    flipped: false
   },
   {
     front: "lucho_portfolio.png",
@@ -66,7 +66,7 @@ const cards = [
       <li>Color scheme and typography selection</li>
       </ul>
       <p class="devText">Website currently in development</p>`,
-    flipped: false,
+    flipped: false
   },
   // {
   //   front: "euralis_map_editor.png",
@@ -87,7 +87,7 @@ const cards = [
             <li>Implementation allowed the company to automate customer reward program</li>
             </ul>
             <p class="devText"><a href="https://www.euralis.de/beraterkarte/" target="_blank">View more</a></p>`,
-    flipped: false,
+    flipped: false
   },
   {
     front: "carteblanche.png",
@@ -97,7 +97,7 @@ const cards = [
         <li>Created UX design using Adobe XD and Balsamiq</li>
         </ul>
         <p class="devText"><a href="https://www.carteblanchewines.com/" target="_blank">View more</a></p>`,
-    flipped: false,
+    flipped: false
   },
   {
     front: "hrc_cover.png",
@@ -108,7 +108,7 @@ const cards = [
       <li>Developed design using Quasar framework and vue.js</li>
       </ul>
       <p class="devText"><a href="https://hamburger-ruderinnen.de/" target="_blank">View website</a></p>`,
-    flipped: false,
+    flipped: false
   },
   {
     front: "spivey.png",
@@ -120,8 +120,8 @@ const cards = [
       <li>Customized OctoberCMS backend</li>
       </ul>
       <p class="devText"><a href="https://spivey.wine/" target="_blank">View website</a></p>`,
-    flipped: false,
-  },
+    flipped: false
+  }
   // {
   //   front: "imageMapper.png",
   //   back:
@@ -138,18 +138,18 @@ export default {
   data() {
     return {
       cards: cards,
-      index: 0,
+      index: 0
     };
   },
   methods: {
-    toggleCard: function (card, hover) {
+    toggleCard: function(card, hover) {
       if (hover) {
         card.flipped = true;
       } else {
         card.flipped = !card.flipped;
       }
     },
-    forward: function () {
+    forward: function() {
       this.card.flipped = false;
       if (this.index >= this.cards.length - 1) {
         this.index = 0;
@@ -157,20 +157,20 @@ export default {
         this.index += 1;
       }
     },
-    backward: function () {
+    backward: function() {
       this.card.flipped = false;
       if (this.index > 0) {
         this.index -= 1;
       } else {
         this.index = this.cards.length - 1;
       }
-    },
+    }
   },
   computed: {
-    card: function () {
+    card: function() {
       return this.cards[this.index];
-    },
-  },
+    }
+  }
 };
 </script>
 
