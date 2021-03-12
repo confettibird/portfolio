@@ -64,7 +64,7 @@ export default {
   width: 30%;
   height: 100%;
   background-color: #4db4d7;
-  @media (max-width: $md-screen) {
+  @media (max-width: $lrg-screen) {
     width: 100%;
     height: 700px;
   }
@@ -73,10 +73,6 @@ export default {
 .menu-wrapper {
   border-left: 2px solid #fdf3c8;
   padding: 5%;
-  // @media (min-width: $lrg-screen) {
-  // }
-  // width: 100%;
-  // margin: 8%;
 }
 
 .menu-slope {

@@ -7,12 +7,12 @@
       <div class="section__body section_body--about">
         <div class="about-text text">
           <p>
-            Hello there! I am a web developer who enjoys building digital
-            products for individuals and businesses. I have over three years of
-            experience making delightful things for the internet and I would
-            love to assist you in the creation of something new and engaging.
-            Send over an email letting me know how I can help, and I'll be sure
-            to be in touch.
+            Hiya! I am a web developer who enjoys building digital products for
+            individuals and businesses. I have over three years of experience
+            making delightful things for the internet and I would love to assist
+            you in the creation of something new and engaging. Send over an
+            email letting me know how I can help, and I'll be sure to be in
+            touch.
           </p>
         </div>
         <div class="about-image round shadowed thumbnail">
@@ -33,7 +33,8 @@ export default {};
 }
 
 .about-text {
-  text-indent: 50px;
+  // text-indent: 50px;
+  line-height: 24px;
   max-width: 50%;
   margin-left: 5%;
   @media (max-width: $md-screen) {

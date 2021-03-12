@@ -15,9 +15,7 @@
       >
         <div class="logo logo--mobile">Noelyn Stephens</div>
         <div class="hv-centered homeImg"></div>
-        <div class="text services--mobile">
-          Visual Design &amp; Web Development
-        </div>
+        <div class="text services--mobile">Web Development &amp; Design</div>
       </div>
     </div>
   </div>
