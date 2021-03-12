@@ -5,7 +5,7 @@
         <div class="logo itemA">Noelyn Stephens</div>
         <div class="professions itemB"></div>
         <div class="itemC">
-          <p class="text services--xl">Visual Design &amp; Web Development</p>
+          <p class="text services--xl">Web Development &amp; Design</p>
         </div>
       </div>
       <div

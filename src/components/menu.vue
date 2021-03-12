@@ -20,7 +20,10 @@
               <a class="navItem" href="#skills" v-smooth-scroll>Skills</a>
             </li>
             <li>
-              <a class="navItem" href="#projects" v-smooth-scroll>Projects</a>
+              <a class="navItem" href="#projects" v-smooth-scroll
+                >Featured<span style="color: rgba(255, 255, 255, 0)">.</span
+                >Projects</a
+              >
             </li>
             <li>
               <a class="navItem" href="#reviews" v-smooth-scroll>Reviews</a>
@@ -61,7 +64,7 @@ export default {
   width: 30%;
   height: 100%;
   background-color: #4db4d7;
-  @media (max-width: $sm-screen) {
+  @media (max-width: $md-screen) {
     width: 100%;
     height: 700px;
   }
@@ -70,6 +73,10 @@ export default {
 .menu-wrapper {
   border-left: 2px solid #fdf3c8;
   padding: 5%;
+  // @media (min-width: $lrg-screen) {
+  // }
+  // width: 100%;
+  // margin: 8%;
 }
 
 .menu-slope {

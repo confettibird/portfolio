@@ -3,25 +3,16 @@
     <div class="slope slope--1"></div>
 
     <section id="about" class="section--1">
-      <div class="section__title section__title--left">
-        About
-      </div>
+      <div class="section__title section__title--left">About</div>
       <div class="section__body section_body--about">
         <div class="about-text text">
           <p>
-            Originally from South Florida, I completed my undergraduate degree
-            at the University of Chicago and my master’s degree at University
-            College London. I am a Bristol based visual designer and web
-            developer specializing in designs that are clean, yet warm and
-            engaging for users. I use the latest development technologies to
-            construct modern maintainable digital products. I believe in working
-            transparently and collaboratively with my clients to deliver the
-            best product possible.
-          </p>
-          <br />
-          <p>
-            I am available for short-term projects as well as full-time
-            contracts. Feel free to get in contact.
+            Hello there! I am a web developer who enjoys building digital
+            products for individuals and businesses. I have over three years of
+            experience making delightful things for the internet and I would
+            love to assist you in the creation of something new and engaging.
+            Send over an email letting me know how I can help, and I'll be sure
+            to be in touch.
           </p>
         </div>
         <div class="about-image round shadowed thumbnail">

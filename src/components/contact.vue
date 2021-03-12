@@ -3,26 +3,24 @@
     <div class="slope slope--5"></div>
 
     <section id="contact" class="section--5">
-      <div class="section__title section__title--left">
-        Contact
-      </div>
+      <div class="section__title section__title--left">Contact</div>
       <div class="section__body section_body--contact">
         <div class="hv-centered centered contact-info text">
           <div class="contact--top">
-            <p style="font-size:24px;">Let's work together:</p>
+            <p style="font-size: 24px">Let's work together:</p>
             <p class="mail">
-              hello@<span style="display:none;">eat this robot</span
+              hello@<span style="display: none">eat this robot</span
               >noelynstephens.com
             </p>
-            <p style="font-size:16px">
+            <p style="font-size: 16px">
               <i class="fa fa-map-marker-alt fa-2x"></i><br />
               Bristol, UK
             </p>
           </div>
           <div class="contact--bottom">
-            <a href="https://twitter.com/confettibird" target="_blank"
+            <!-- <a href="https://twitter.com/confettibird" target="_blank"
               ><i class="fab fa-twitter fa-2x"></i
-            ></a>
+            ></a> -->
             <!--<a href="https://www.instagram.com/nociostudios" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>-->
             <a href="https://github.com/confettibird" target="_blank"
               ><i class="fab fa-github fa-2x"></i
