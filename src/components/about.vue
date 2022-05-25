@@ -7,12 +7,11 @@
       <div class="section__body section_body--about">
         <div class="about-text text">
           <p>
-            Hiya! I am a web developer who enjoys building digital products for
-            individuals and businesses. I have over three years of experience
-            making delightful things for the internet and I would love to assist
-            you in the creation of something new and engaging. Send over an
-            email letting me know how I can help, and I'll be sure to be in
-            touch.
+            Hiya! I am a web developer and designer who enjoys building digital 
+            products for individuals and businesses. I have over four years of 
+            experience making delightful things for the internet and I would love 
+            to assist you in the creation of something new and engaging. Send over 
+            an email letting me know how I can help.
           </p>
         </div>
         <div class="about-image round shadowed thumbnail">

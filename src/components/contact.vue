@@ -14,7 +14,7 @@
             </p>
             <p style="font-size: 16px">
               <i class="fa fa-map-marker-alt fa-2x"></i><br />
-              Bristol, UK
+              Illinois, USA
             </p>
           </div>
           <div class="contact--bottom">
