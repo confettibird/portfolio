@@ -1,7 +1,7 @@
 <template>
   <div>
     <footer>
-      <div class="slope slope--6"></div>
+      <!-- <div class="slope slope--6"></div> -->
     </footer>
   </div>
 </template>

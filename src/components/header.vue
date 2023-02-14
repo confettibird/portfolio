@@ -5,7 +5,7 @@
         <div class="logo itemA">Noelyn Stephens</div>
         <div class="professions itemB"></div>
         <div class="itemC">
-          <p class="text services--xl">Web Development &amp; Design</p>
+          <p class="text services--xl">Design &amp; Development</p>
         </div>
       </div>
       <div
@@ -15,7 +15,7 @@
       >
         <div class="logo logo--mobile">Noelyn Stephens</div>
         <div class="hv-centered homeImg"></div>
-        <div class="text services--mobile">Web Development &amp; Design</div>
+        <div class="text services--mobile">Design &amp; Development</div>
       </div>
     </div>
   </div>
@@ -136,19 +136,24 @@ export default {
     transition: all 3s ease-in-out;
 
     .homeImg {
-      background-image: url("/assets/img/svg/homePortrait.svg");
+      background-image: url("/assets/img/hero/barbican.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 60%;
+      // height: 60%;
       width: 60%;
+      aspect-ratio: 4 / 5;
       @media (max-width: $lrg-screen) {
-        height: 55%;
+        // height: 55%;
         width: 50%;
       }
       @media (max-width: $md-screen) {
-        height: 50%;
+        // height: 50%;
         width: 60%;
+      }
+      @media (max-width: $sm-screen) {
+        // height: 50%;
+        width: 75%;
       }
       @media (max-height: 380px) {
         display: none;

@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="slope slope--3"></div>
-
     <section id="projects" class="section--3">
       <div class="section__title section__title--left">Featured</div>
       <div class="centered section__body">
@@ -29,6 +28,7 @@
         </div>
       </div>
     </section>
+    <div class="slope slope--5"></div>
   </div>
 </template>
 
@@ -175,6 +175,11 @@ export default {
 </script>
 
 <style lang="scss">
+#projects {
+  .section__title--left {
+    font-size: 3rem;
+  }
+}
 #projects-slider {
   display: grid;
   grid-template-columns: [col1-start]15% [col1-end]60% [col2-start]15% [col2-end];

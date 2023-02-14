@@ -43,7 +43,7 @@ p {
 
 <template>
   <div>
-    <div class="slope slope--4"></div>
+    <!-- <div class="slope slope--4"></div> -->
 
     <section id="reviews" class="section--4">
       <div class="section__title section__title--right">

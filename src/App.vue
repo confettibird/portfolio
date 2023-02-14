@@ -6,7 +6,7 @@
       <about-section></about-section>
       <skills-section></skills-section>
       <projects-section></projects-section>
-      <reviews-section></reviews-section>
+      <!-- <reviews-section></reviews-section> -->
       <contact-section></contact-section>
     </content>
     <footer-section></footer-section>
@@ -21,7 +21,7 @@ import headerSection from "@/components/header.vue";
 import aboutSection from "@/components/about.vue";
 import skillsSection from "@/components/skills.vue";
 import projectsSection from "@/components/projects.vue";
-import reviewsSection from "@/components/review.vue";
+// import reviewsSection from "@/components/review.vue";
 import contactSection from "@/components/contact.vue";
 import footerSection from "@/components/footer.vue";
 
@@ -33,7 +33,7 @@ export default {
     aboutSection,
     skillsSection,
     projectsSection,
-    reviewsSection,
+    // reviewsSection,
     contactSection,
     footerSection
   }

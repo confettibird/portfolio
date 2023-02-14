@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="slope slope--5"></div>
+    <!-- <div class="slope slope--5"></div> -->
 
     <section id="contact" class="section--5">
-      <div class="section__title section__title--left">Contact</div>
+      <!-- <div class="section__title section__title--left">Contact</div> -->
       <div class="section__body section_body--contact">
         <div class="hv-centered centered contact-info text">
           <div class="contact--top">
