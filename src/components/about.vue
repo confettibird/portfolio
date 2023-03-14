@@ -13,7 +13,7 @@
             new and engaging. Send over an email letting me know how I can help.
           </p>
         </div>
-        <div class="about-image round shadowed thumbnail">
+        <div class="about-image round thumbnail">
           <img src="/assets/img/portfolioPhoto.jpg" class="portrait" />
         </div>
       </div>
@@ -56,5 +56,6 @@ export default {};
 
 .about-image {
   margin: 5%;
+  border: solid 1px #3b3109;
 }
 </style>

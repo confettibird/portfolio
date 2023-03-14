@@ -1,7 +1,5 @@
 <template>
   <div>
-    <!-- <div class="slope slope--2"></div> -->
-
     <section id="skills" class="section--2">
       <div class="section__body">
         <div class="centered skill-grid">
@@ -30,7 +28,7 @@
                     : '#04808F'
               "
               spacing="0.5"
-              font-family="Nunito"
+              font-family="Jost, sans-serif"
             />
           </div>
         </div>

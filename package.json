@@ -15,6 +15,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "normalize.css": "^8.0.1",
     "vue": "^2.6.12",
+    "vue-js-modal": "^2.0.1",
     "vue-smooth-scroll": "^1.0.13",
     "vuewordcloud": "^18.7.12"
   },

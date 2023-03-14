@@ -14,7 +14,11 @@
         :style="{ backgroundColor: color }"
       >
         <div class="logo logo--mobile">Noelyn Stephens</div>
-        <div class="hv-centered homeImg"></div>
+        <div class="hv-centered homeImg">
+          <div class="box-1">
+            <div class="box-2"></div>
+          </div>
+        </div>
         <div class="text services--mobile">Design &amp; Development</div>
       </div>
     </div>
@@ -67,7 +71,7 @@ export default {
   margin-top: 55px;
 
   .logo {
-    color: $color-font;
+    color: $color-logo;
     font: normal 1.75rem $font-logo;
     @media (min-width: $xtra-lrg-screen) {
       font-size: 1.8vw;
@@ -111,6 +115,9 @@ export default {
       width: 400px;
       justify-self: start;
       align-self: end;
+      .text {
+        color: $color-logo;
+      }
     }
 
     p {
@@ -136,13 +143,17 @@ export default {
     transition: all 3s ease-in-out;
 
     .homeImg {
-      background-image: url("/assets/img/hero/barbican.jpeg");
+      // background-image: url("/assets/img/hero/o.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      background-color: #64faea;
       // height: 60%;
       width: 60%;
-      aspect-ratio: 4 / 5;
+      aspect-ratio: 4.5 / 5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       @media (max-width: $lrg-screen) {
         // height: 55%;
         width: 50%;
@@ -157,6 +168,19 @@ export default {
       }
       @media (max-height: 380px) {
         display: none;
+      }
+      .box-1 {
+        background-color: #b1fbf4;
+        width: 50%;
+        aspect-ratio: 4.5 / 5;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        .box-2 {
+          background-color: #50c7bb;
+          width: 40%;
+          aspect-ratio: 4.5 / 5;
+        }
       }
     }
 
