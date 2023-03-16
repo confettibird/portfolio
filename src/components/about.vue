@@ -56,6 +56,6 @@ export default {};
 
 .about-image {
   margin: 5%;
-  border: solid 1px #3b3109;
+  border: solid 1px $color-font;
 }
 </style>

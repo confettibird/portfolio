@@ -67,16 +67,13 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-#contact.section--5 {
-  background-color: #fbf9f4;
-}
 .section_body--contact {
   height: 250px;
 }
 .slope--footer {
   width: 100%;
-  height: 150px;
-  background-color: #fbf9f4;
+  height: max-content;
+  background-color: $color-light-4;
   .waves {
     position: relative;
     width: 100%;
@@ -134,7 +131,7 @@ export default {};
   max-width: 400px;
 
   .contact--top {
-    border: solid 1px #3b3109;
+    border: solid 1px $color-font;
     background-color: #fdf3c8;
     padding: 5%;
   }
@@ -147,7 +144,7 @@ export default {};
     }
   }
   i {
-    color: #3b3109;
+    color: $color-font;
     padding-top: 8%;
     padding-bottom: 5%;
   }
