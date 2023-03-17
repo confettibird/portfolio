@@ -30,7 +30,7 @@
                     ? '#056299'
                     : '#04808F'
               "
-              spacing="0.5"
+              :spacing="0.5"
               font-family="Jost, sans-serif"
             />
           </div>

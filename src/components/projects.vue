@@ -145,7 +145,7 @@ export default {
           position: this.cards[index].position
         },
         { height: "auto" },
-        { "before-close": event => {} }
+        { "before-close": () => {} }
       );
     }
   },
