@@ -5,7 +5,7 @@
         <div class="logo itemA">Noelyn Stephens</div>
         <div class="professions itemB"></div>
         <div class="itemC">
-          <p class="text services--xl">Web Development &amp; Design</p>
+          <p class="text services--xl">Design &amp; Development</p>
         </div>
       </div>
       <div
@@ -14,8 +14,12 @@
         :style="{ backgroundColor: color }"
       >
         <div class="logo logo--mobile">Noelyn Stephens</div>
-        <div class="hv-centered homeImg"></div>
-        <div class="text services--mobile">Web Development &amp; Design</div>
+        <div class="hv-centered homeImg">
+          <div class="box-1">
+            <div class="box-2"></div>
+          </div>
+        </div>
+        <div class="text services--mobile">Design &amp; Development</div>
       </div>
     </div>
   </div>
@@ -48,7 +52,7 @@ export default {
   mounted: function() {
     window.setInterval(() => {
       this.nextColor();
-    }, 5000);
+    }, 3000);
   }
 };
 </script>
@@ -67,7 +71,7 @@ export default {
   margin-top: 55px;
 
   .logo {
-    color: $color-font;
+    color: $color-logo;
     font: normal 1.75rem $font-logo;
     @media (min-width: $xtra-lrg-screen) {
       font-size: 1.8vw;
@@ -111,6 +115,9 @@ export default {
       width: 400px;
       justify-self: start;
       align-self: end;
+      .text {
+        color: $color-logo;
+      }
     }
 
     p {
@@ -136,22 +143,44 @@ export default {
     transition: all 3s ease-in-out;
 
     .homeImg {
-      background-image: url("/assets/img/svg/homePortrait.svg");
+      // background-image: url("/assets/img/hero/o.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 60%;
+      background-color: #64faea;
+      // height: 60%;
       width: 60%;
+      aspect-ratio: 4.5 / 5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       @media (max-width: $lrg-screen) {
-        height: 55%;
+        // height: 55%;
         width: 50%;
       }
       @media (max-width: $md-screen) {
-        height: 50%;
+        // height: 50%;
         width: 60%;
+      }
+      @media (max-width: $sm-screen) {
+        // height: 50%;
+        width: 75%;
       }
       @media (max-height: 380px) {
         display: none;
+      }
+      .box-1 {
+        background-color: #b1fbf4;
+        width: 50%;
+        aspect-ratio: 4.5 / 5;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        .box-2 {
+          background-color: #50c7bb;
+          width: 40%;
+          aspect-ratio: 4.5 / 5;
+        }
       }
     }
 
@@ -202,9 +231,12 @@ export default {
         font-size: 0.6rem;
       }
     }
+    .text.services--mobile {
+      color: $color-logo;
+    }
 
     @media (max-width: $lrg-screen) {
-      width: 70%;
+      width: 90%;
     }
   }
 }

@@ -26,9 +26,6 @@
               >
             </li>
             <li>
-              <a class="navItem" href="#reviews" v-smooth-scroll>Reviews</a>
-            </li>
-            <li>
               <a class="navItem" href="#contact" v-smooth-scroll>Contact</a>
             </li>
           </ul>
@@ -62,11 +59,10 @@ export default {
   top: 0;
   z-index: 100;
   width: 30%;
-  height: 100%;
+  height: 100vh;
   background-color: #4db4d7;
   @media (max-width: $lrg-screen) {
     width: 100%;
-    height: 700px;
   }
 }
 
