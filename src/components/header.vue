@@ -52,7 +52,7 @@ export default {
   mounted: function() {
     window.setInterval(() => {
       this.nextColor();
-    }, 5000);
+    }, 3000);
   }
 };
 </script>
@@ -231,9 +231,12 @@ export default {
         font-size: 0.6rem;
       }
     }
+    .text.services--mobile {
+      color: $color-logo;
+    }
 
     @media (max-width: $lrg-screen) {
-      width: 70%;
+      width: 90%;
     }
   }
 }

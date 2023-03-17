@@ -6,11 +6,10 @@
       <div class="section__body section_body--about">
         <div class="about-text text">
           <p>
-            <span class="big">Hiya!</span> I am a web developer and designer who
-            enjoys building digital products for individuals and businesses. I
-            have over four years of experience making delightful things for the
-            internet and I would love to assist you in the creation of something
-            new and engaging. Send over an email letting me know how I can help.
+            <span class="big">Hiya!</span> I am a developer and designer who
+            enjoys building digital products. I have over four years of
+            experience making delightful things for the internet and I would
+            love to assist you in the creation of something engaging.
           </p>
         </div>
         <div class="about-image round thumbnail">

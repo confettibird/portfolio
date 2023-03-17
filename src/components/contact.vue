@@ -51,7 +51,7 @@
               y="0"
               fill="rgba(255,255,255,0.7"
             /> -->
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="#023183" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="#F2C407" />
             <!-- <use xlink:href="#gentle-wave" x="48" y="5" fill="#f0faf9" /> -->
             <!-- <use xlink:href="#gentle-wave" x="48" y="7" fill="#f0faf9" /> -->
           </g>
@@ -151,7 +151,7 @@ export default {};
   a {
     text-decoration: none;
     &:hover {
-      color: yellow;
+      color: #f2c407;
     }
     &:active,
     &:link {

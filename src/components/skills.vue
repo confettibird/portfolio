@@ -13,7 +13,7 @@
                 ['three.js', 1.5],
                 ['JavaScript', 2],
                 ['Vue.js', 2],
-                ['Wordpress', 2],
+                ['WordPress', 2],
                 ['Photoshop', 2.25],
                 ['CSS/Sass', 2.25],
                 ['Figma', 1.5],

@@ -13,6 +13,7 @@
               v-for="(card, index) in cards"
               :key="index"
               @click="showModal(index)"
+              ref="images"
             >
               <img
                 :src="'assets/img/projects/' + card.front"
@@ -31,82 +32,80 @@ const cards = [
   {
     front: "hilo.png",
     position: "center",
+    heading: "Front End Development",
     back: `<div class="list">
-            <p>Front End Development</p>
+            <p>Client:</strong> Hi-lo Liquor </p>
             <ul>
-            <li>Wireframe, typography, and color scheme selection</li>
-            <li>Bespoke HTML &amp; CSS (SASS)</li>
-            <li>Custom Vue.js components</li>
-            <li>Customized HeadlessCMS backend</li>
+            <li>Primary developer on a multiple phase WordPress custom build</li>
+            <li>Custom built theme with Tailwind CSS </li>
+            <li>Integrated content customization fields</li>
+            <li>Worked closely with project managers and design team</li>
             </ul>
-            <p class="devText"><a href="https://hiloliquor.com/" target="_blank">View website</a></p>
             </div>`,
+    link: `<a href="https://hiloliquor.com/" target="_blank">View</a>`,
     flipped: false
   },
   {
     front: "1924wines.png",
     position: "center",
+    heading: "Front End Development",
     back: `<div class="list">
-            <p>Front End Development</p>
+            <p>Client: Delicato Family Wines</p>
             <ul>
-            <li>Lead developer of custom Wordpress blog design implementation</li>
-            <li>Bug fixes and maintenance tasks</li>
-            <li>Expanded sections of corporate website</li>
-            <li>Assisted in SEO audit and optimization</li>
+            <li> Primary developer on a multi-brand redesign spanning 7 WordPress website builds including two custom builds which I was responsible for</li>
+            <li>Custom built themes with Tailwind CSS </li>
+            <li>Integrated content customization fields</li>
+            <li>Worked closely with project managers and design team</li>
             </ul>
-            <p class="devText"><a href="https://www.1924wines.com/" target="_blank">View more</a></p>
             </div>`,
+    link: `<a href="https://www.1924wines.com/" target="_blank">View</a>`,
     flipped: false
   },
   {
     front: "soylent.png",
     position: "center",
+    heading: "Front End Development",
     back: `<div class="list">
-      <p>Front End Development</p>
+      <p>Client: Soylent</p>
       <ul>
-      <li>Photoshop Design mockups</li>
-      <li>Color scheme and typography selection</li>
+      <li>Sole developer on a WordPress custom build</li>
+      <li>Integrated content customization fields</li>
+      <li>Integrated a variety of animations requested by the client</li>
+      <li>Worked closely with project managers and design team</li>
       </ul> 
-      <p class="devText"><a href="https://impact.soylent.com/" target="_blank">View more</a></p>
       </div>`,
+    link: `<a href="https://impact.soylent.com/" target="_blank">View</a>`,
     flipped: false
   },
   {
     front: "euralis_map_editor.png",
     position: "left",
+    heading: "Front End Development and UX Design",
     back: `<div class="list">
-            <p>Front End Development and UX Design</p>
+            <p>Client: Euralis GmbH</p>
             <ul>
-            <li>UX Design of internal application that displays consultants according to region</li>
-            <li>Implemented design using Quasar framework and vue.js</li>
+            <li>UX Design of internal mapping application that connects to client WordPress Website</li>
+            <li>Implemented using Quasar framework and vue.js</li>
             </ul>
-            <p class="devText"><a href="https://www.euralis.de/beraterkarte/" target="_blank">View company</a></p>
             </div>`,
+    link: `<a href="https://www.euralis.de/beraterkarte/" target="_blank">View</a>`,
+    flipped: false
+  },
+  {
+    front: "carteblanche.png",
+    position: "left",
+    heading: "UX Design and Visual Design",
+    position: "left",
+    back: `<div class="list">
+            <p>Client: Carte Blanche Wines</p>
+            <ul>
+            <li>Created Type lock-up logo</li>
+            <li>Created UX design using Adobe XD and Balsamiq</li>
+            </ul>
+            </div>`,
+    link: `<a href="https://www.carteblanchewines.com/" target="_blank">View</a>`,
     flipped: false
   }
-  // {
-  //   front: "euralis_portal.png",
-  //   position: "left",
-  //   back: `Front End Development and UX Design
-  //           <ul>
-  //           <li>UX Design of "Mais and More! GOLD" customer portal for tracking customer rewards</li>
-  //           <li>Developed design using Quasar framework and vue.js</li>
-  //           <li>Implementation allowed the company to automate customer reward program</li>
-  //           </ul>
-  //           <p class="devText"><a href="https://www.euralis.de/beraterkarte/" target="_blank">View more</a></p>`,
-  //   flipped: false
-  // },
-  // {
-  //   front: "carteblanche.png",
-  //   position: "left",
-  //   back: `Logo Design and UX Design
-  //       <ul>
-  //       <li>Created Type lock-up logo consistent with brand's refined, contemporary image</li>
-  //       <li>Created UX design using Adobe XD and Balsamiq</li>
-  //       </ul>
-  //       <p class="devText"><a href="https://www.carteblanchewines.com/" target="_blank">View more</a></p>`,
-  //   flipped: false
-  // }
 ];
 export default {
   data() {
@@ -116,50 +115,60 @@ export default {
     };
   },
   methods: {
-    toggleCard: function(card, hover) {
-      if (hover) {
-        card.flipped = true;
-      } else {
-        card.flipped = !card.flipped;
-      }
-    },
     showModal: function(index) {
       this.index = index;
       this.$modal.show(
         {
           template: `
-      <div class="inner-wrapper">
-        <h3>This is created inline</h3>
+      <div class="inner-wrapper text">
+        <div class="closeModal" @click="closeModal"><img src="assets/img/closeModal.svg"/></div>  
+        <h3 v-html="heading" class="heading"></h3>
         <div v-html="content" class="details"></div>
+        <div  class="cta-col">
+          <img :src="'assets/img/projects/' + image" :style="{ objectPosition: position }" class="img-thumb"/>
+          <p v-html="link" class="devText"></p>
+        </div>
       </div>
     `,
-          props: ["content"]
+          props: ["content", "image", "heading", "link", "position"],
+          methods: {
+            closeModal: function() {
+              this.$modal.hideAll();
+            }
+          }
         },
-        { content: this.cards[index].back },
+        {
+          content: this.cards[index].back,
+          image: this.cards[index].front,
+          heading: this.cards[index].heading,
+          link: this.cards[index].link,
+          position: this.cards[index].position
+        },
         { height: "auto" },
         { "before-close": event => {} }
       );
-    },
-    forward: function() {
-      this.card.flipped = false;
-      if (this.index >= this.cards.length - 1) {
-        this.index = 0;
-      } else {
-        this.index += 1;
-      }
-    },
-    backward: function() {
-      this.card.flipped = false;
-      if (this.index > 0) {
-        this.index -= 1;
-      } else {
-        this.index = this.cards.length - 1;
-      }
     }
   },
   computed: {
     card: function() {
       return this.cards[this.index];
+    }
+  },
+  mounted() {
+    const firstImageClassList = this.$refs.images[0].querySelector("img")
+      .classList;
+    firstImageClassList.add("opacity-full");
+    const hover = () => {
+      firstImageClassList.add("opacity-40");
+      firstImageClassList.remove("opacity-full");
+    };
+    const noHover = () => {
+      firstImageClassList.add("opacity-full");
+      firstImageClassList.remove("opacity-40");
+    };
+    for (const card of this.$refs.images.slice(1)) {
+      card.addEventListener("mouseenter", hover, false);
+      card.addEventListener("mouseleave", noHover, false);
     }
   }
 };
@@ -175,20 +184,98 @@ export default {
   }
   .inner-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 2rem 4rem;
-    li {
-      list-style: none;
+    @media (max-width: $lrg-screen) {
+      padding: 1rem;
+    }
+    .closeModal {
+      cursor: pointer;
+      width: 100%;
+      text-align: end;
+      img {
+        width: 30px;
+        height: auto;
+      }
     }
     h3 {
       border-bottom: solid 1px $color-border;
       margin-bottom: 2rem;
+      padding-bottom: 0.5rem;
+      width: 100%;
     }
     .details {
-      width: 100%;
+      width: 50%;
+      @media (max-width: $lrg-screen) {
+        width: 100%;
+      }
       .list {
-        width: 50%;
-        border-right: solid 1px $color-border;
+        @media (min-width: $lrg-screen) {
+          border-right: solid 1px $color-border;
+          width: 95%;
+          height: 100%;
+          padding-bottom: 2rem;
+          padding-right: 3rem;
+        }
+        @media (max-width: $lrg-screen) {
+          border-bottom: solid 1px $color-border;
+          width: 100%;
+          height: auto;
+          padding-bottom: 1rem;
+          margin-bottom: 2rem;
+        }
+        p {
+          font-weight: bold;
+          font-style: italic;
+        }
+        ul {
+          margin-left: 14px; /* key property */
+        }
+        li {
+          list-style: none;
+          padding-left: 1.5ch;
+        }
+        li::marker {
+          content: "⭐";
+          font-size: 0.9rem;
+          height: 2rem;
+        }
+      }
+    }
+    .cta-col {
+      width: 50%;
+      img {
+        width: 100%;
+        border: 1px solid $color-font;
+        @media (max-width: $lrg-screen) {
+          display: none;
+        }
+      }
+      .devText {
+        margin-top: 2rem;
+        border-top: 1px solid $color-border;
+        @media (max-width: $lrg-screen) {
+          border: none;
+          width: max-content;
+          margin-top: 0;
+        }
+        a {
+          display: inline-block;
+          background-color: #fdf3c8;
+          margin-top: 25px;
+          padding: 0.75rem 1.5rem;
+          text-decoration: none;
+          border: 1px solid $color-font;
+          min-width: 150px;
+          text-align: center;
+          color: $color-font;
+          transition: color 0.2s ease-in-out;
+        }
+        a:hover {
+          color: $color-base;
+          transition: color 0.2s ease-in-out;
+        }
       }
     }
   }
@@ -251,6 +338,7 @@ export default {
         aspect-ratio: 3/2;
         border: 1px solid $color-font;
         opacity: 40%;
+        transition: opacity 0.5s ease-in-out;
       }
       img:hover {
         opacity: 100%;
@@ -261,21 +349,13 @@ export default {
       }
     }
   }
-  #projects::before {
-    content: "before";
-    height: 10px;
-    width: 800px;
-    background-color: $color-border;
-    position: absolute;
-    color: red;
+  .opacity-40 {
+    opacity: 40% !important;
+    transition: opacity 0.9s ease-in-out;
   }
-  #projects::after {
-    content: "after";
-    height: 10px;
-    width: 80vw;
-    background-color: $color-border;
-    position: absolute;
-    color: red;
+  .opacity-full {
+    opacity: 100% !important;
+    transition: opacity 0.9s ease-in-out;
   }
 }
 </style>
