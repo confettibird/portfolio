@@ -30,7 +30,7 @@
 <script>
 const cards = [
   {
-    front: "hilo.png",
+    front: "hilo.jpg",
     position: "center",
     heading: "Front End Development",
     back: `<div class="list">
@@ -46,7 +46,7 @@ const cards = [
     flipped: false
   },
   {
-    front: "1924wines.png",
+    front: "1924wines.jpg",
     position: "center",
     heading: "Front End Development",
     back: `<div class="list">
@@ -62,7 +62,7 @@ const cards = [
     flipped: false
   },
   {
-    front: "soylent.png",
+    front: "soylent.jpg",
     position: "center",
     heading: "Front End Development",
     back: `<div class="list">
@@ -78,7 +78,7 @@ const cards = [
     flipped: false
   },
   {
-    front: "euralis_map_editor.png",
+    front: "euralis_map_editor.jpg",
     position: "left",
     heading: "Front End Development and UX Design",
     back: `<div class="list">
@@ -92,10 +92,9 @@ const cards = [
     flipped: false
   },
   {
-    front: "carteblanche.png",
+    front: "carteblanche.jpg",
     position: "left",
     heading: "UX Design and Visual Design",
-    position: "left",
     back: `<div class="list">
             <p>Client: Carte Blanche Wines</p>
             <ul>
@@ -104,6 +103,20 @@ const cards = [
             </ul>
             </div>`,
     link: `<a href="https://www.carteblanchewines.com/" target="_blank">View</a>`,
+    flipped: false
+  },
+  {
+    front: "cardGame.jpg",
+    position: "center",
+    heading: "Graphic Design",
+    back: `<div class="list">
+            <p>Client: Active Transport The Game</p>
+            <ul>
+            <li>Created logo and style guide for an education board game</li>
+            <li>Created using Adobe Illustrator</li>
+            </ul>
+            </div>`,
+    link: `<a href="assets/img/projects/allCards.pdf/" target="_blank">View</a>`,
     flipped: false
   }
 ];
