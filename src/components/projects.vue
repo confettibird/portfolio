@@ -112,7 +112,8 @@ const cards = [
     back: `<div class="list">
             <p>Client: Active Transport The Game</p>
             <ul>
-            <li>Created logo and style guide for an education board game</li>
+            <li>Created logo and style guide for an educational board game</li>
+            <li>Designer and inventor; carrying out all stages of product prototyping and development</li>
             <li>Created using Adobe Illustrator</li>
             </ul>
             </div>`,
