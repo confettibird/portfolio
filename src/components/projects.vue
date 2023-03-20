@@ -116,7 +116,7 @@ const cards = [
             <li>Created using Adobe Illustrator</li>
             </ul>
             </div>`,
-    link: `<a href="assets/img/projects/allCards.pdf/" target="_blank">View</a>`,
+    link: `<a href="https://github.com/confettibird/portfolio/raw/master/public/assets/img/projects/allCards.pdf" target="_blank">View</a>`,
     flipped: false
   }
 ];
