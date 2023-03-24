@@ -117,7 +117,7 @@ const cards = [
             <li>Created using Adobe Illustrator</li>
             </ul>
             </div>`,
-    link: `<a href="https://github.com/confettibird/portfolio/raw/master/public/assets/img/projects/allCards.pdf" target="_blank">View</a>`,
+    link: `<a href="assets/img/projects/allCards.jpg" Content-Disposition: inline; target="_blank">View</a>`,
     flipped: false
   }
 ];
@@ -351,7 +351,7 @@ export default {
         // border-radius: 5px;
         aspect-ratio: 3/2;
         border: 1px solid $color-font;
-        opacity: 40%;
+        opacity: 60%;
         transition: opacity 0.5s ease-in-out;
       }
       img:hover {
@@ -364,7 +364,7 @@ export default {
     }
   }
   .opacity-40 {
-    opacity: 40% !important;
+    opacity: 60% !important;
     transition: opacity 0.9s ease-in-out;
   }
   .opacity-full {
