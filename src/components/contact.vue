@@ -71,6 +71,7 @@
 export default {
 	data() {
 		let colors = ["#fdeeaf", "#fbe37e", "#fad84c", "#f9cd1a", "#dab106"];
+		// let colors = ["#027d83", "##026d83", "#025c83", "#024b83", "#023183"];
 		let start = 2;
 		return {
 			colors: colors,
