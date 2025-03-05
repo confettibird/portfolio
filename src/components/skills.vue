@@ -10,7 +10,7 @@
 					<!-- new skills layout -->
 					<div class="skill-cols">
 						<div class="skill-col">
-							I have expertise building digital interfaces using <br/>
+							I have expertise building digital interfaces using <br />
 							<strong>HTML, CSS,</strong> and <strong>JavaScript</strong> as well as
 							experience with modern frameworks like <strong>Vue.js</strong>. My work
 							spans everything from immersive 3D experiences built with
@@ -19,12 +19,14 @@
 							<strong>PHP</strong>.
 						</div>
 						<div class="skill-col">
-							Additionally, my work has frequently incorporated <br/>
+							Additionally, my work has frequently incorporated <br />
 							<strong>REST APIs</strong>, and modern development workflows using
-							<strong>Webpack, Docker,</strong> and <strong>npm</strong>. With a strong foundation in
-							<strong>component-based development</strong> and collaboration tools like
-							<strong>GitHub, Webflow, ClickUp, Jira,</strong>and <strong>Figma</strong> I deliver
-							seamless and high-performing digital experiences.
+							<strong>Webpack, Docker,</strong> and <strong>npm</strong>. With a strong
+							foundation in <strong>component-based development</strong> and
+							collaboration tools like
+							<strong>GitHub, Webflow, ClickUp, Jira,</strong>and
+							<strong>Figma</strong> I deliver seamless and high-performing digital
+							experiences.
 						</div>
 					</div>
 				</div>
@@ -77,6 +79,7 @@ export default {
 	.skill-cols {
 		display: flex;
 		flex-direction: row;
+    flex-wrap: wrap;
 		justify-content: space-between;
 		border: solid 1px #3b3109;
 		background-color: #fdf3c8;
@@ -88,6 +91,10 @@ export default {
 			margin-bottom: 25px;
 			width: 45%;
 			line-height: normal;
+
+			@media (max-width: $lrg-screen) {
+				width: 100%;
+			}
 
 			strong {
 				font-size: 28px;
