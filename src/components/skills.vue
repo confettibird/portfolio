@@ -3,69 +3,47 @@
 		<section id="skills" class="section--2">
 			<div class="section__body">
 				<div class="section__title">
-					<h3 style="font-size: 36px">Skills</h3>
+					<h3 style="font-size: 36px">Technical Skills</h3>
 					<!-- <span class="box-1"> </span> -->
 				</div>
-				<div class="centered skill-grid" style="font-family:Jost, sans-serif">
-          <!-- new skills layout -->
+				<div class="centered skill-grid" style="font-family: Jost, sans-serif">
+					<!-- new skills layout -->
 					<div class="skill-cols">
-						<div class="col-sk-1">
-							<h3 style="font-size: 36px">Front-end</h3>
+						<div class="skill-col">
+							I have expertise building digital interfaces using <br/>
+							<strong>HTML, CSS,</strong> and <strong>JavaScript</strong> as well as
+							experience with modern frameworks like <strong>Vue.js</strong>. My work
+							spans everything from immersive 3D experiences built with
+							<strong>Three.js</strong> and <strong>WebGL</strong> to developing
+							scalable web solutions with <strong>WordPress</strong> and
+							<strong>PHP</strong>.
 						</div>
-						<div class="col-sk-2">
-							<h3 style="font-size: 36px">Backend</h3>
+						<div class="skill-col">
+							Additionally, my work has frequently incorporated <br/>
+							<strong>REST APIs</strong>, and modern development workflows using
+							<strong>Webpack, Docker,</strong> and <strong>npm</strong>. With a strong foundation in
+							<strong>component-based development</strong> and collaboration tools like
+							<strong>GitHub, Webflow, ClickUp, Jira,</strong>and <strong>Figma</strong> I deliver
+							seamless and high-performing digital experiences.
 						</div>
-						<div class="col-sk-3">
-							<h3 style="font-size: 36px">Team</h3>
-						</div>
-					</div>
-					<div id="wordcloud">
-						<vue-word-cloud
-							:words="[
-								['three.js', 1.5],
-								['JavaScript', 2],
-								['Vue.js', 2],
-								['WordPress', 2],
-								['Photoshop', 2.25],
-								['CSS/Sass', 2.25],
-								['Figma', 1.5],
-								['Illustrator', 2.25],
-								['InDesign', 1.5],
-							]"
-							:color="
-								([, weight]) =>
-									weight > 3
-										? '#023183'
-										: weight > 2
-										? '#4276CF'
-										: weight > 1
-										? '#056299'
-										: '#04808F'
-							"
-							:spacing="0.5"
-							font-family="Jost, sans-serif"
-						/>
 					</div>
 				</div>
 			</div>
-			<!-- <div class="section__title section__title--right">Skills</div> -->
 		</section>
 	</div>
 </template>
 
 <script>
-import vueWordCloud from "vuewordcloud";
 export default {
-	components: {
-		vueWordCloud,
-	},
+	components: {},
 };
 </script>
 
 <style lang="scss" scoped>
 #skills {
+	@include backgroundPttrn;
+
 	.section__body {
-		border-top: 1px solid $color-border;
 		margin: 0 2rem;
 		position: relative;
 		display: flex;
@@ -94,14 +72,28 @@ export default {
 	}
 }
 .skill-grid {
-	width: 100%;
-	height: 70%;
-	// margin: 10rem 15px;
-}
+	width: 79.5%;
 
-#wordcloud {
-	width: 65%;
-	height: 50vh;
-	margin: auto;
+	.skill-cols {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border: solid 1px #3b3109;
+		background-color: #fdf3c8;
+		padding: 5%;
+
+		.skill-col {
+			font-size: 18px;
+			text-align: left;
+			margin-bottom: 25px;
+			width: 45%;
+			line-height: normal;
+
+			strong {
+				font-size: 28px;
+				text-align: left;
+			}
+		}
+	}
 }
 </style>

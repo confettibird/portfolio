@@ -1,6 +1,6 @@
 <template>
   <div class="projects-wrapper section--3">
-    <div class="border section--3">
+    <div class="section--3">
       <section id="projects" class="section--3">
         <div class="section__title">
           <h3 style="font-size:36px">Featured Projects</h3>

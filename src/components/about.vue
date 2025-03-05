@@ -6,14 +6,11 @@
       <div class="section__body section_body--about">
         <div class="about-text text">
           <p>
-            <span class="big">Hiya!</span> I am a developer and designer who
-            enjoys building digital products. I have over four years of
-            experience making delightful things for the internet and I would
-            love to assist you in the creation of something engaging.
+            <span class="big">Hiya!</span> I am a web developer with experience in UI/UX design research. I have over five years of experience building bespoke digital interfaces for small to large organizations. I love making delightful things for the internet; feel free to send me an email if you'd like to work together: hello@<span style="display: none">eat this robot</span>noelynstephens.com.
           </p>
         </div>
         <div class="about-image round thumbnail">
-          <img src="/assets/img/portfolioPhoto.jpg" class="portrait" />
+          <img src="/assets/img/portfolioPhoto.jpg" alt="photo of Noelyn Stephens standing in front of a flowering tree" class="portrait" />
         </div>
       </div>
     </section>

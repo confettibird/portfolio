@@ -5,7 +5,7 @@
 				<div class="logo itemA">Noelyn Stephens</div>
 				<div class="professions itemB"></div>
 				<div class="itemC">
-					<p class="text services--xl">Design &amp; Development</p>
+					<p class="text services--xl">Full-stack Development &amp; <br/>UI/UX Design</p>
 				</div>
 			</div>
 			<div
@@ -17,7 +17,7 @@
 				<div class="hv-centered homeImg">
 					<div class="hv-centered sun-rise-container"><div class="sun"></div></div>
 				</div>
-				<div class="text services--mobile">Design &amp; Development</div>
+				<div class="text services--mobile">Full-stack Development &amp; UI/UX Design</div>
 			</div>
 		</div>
 	</div>
@@ -70,16 +70,16 @@ export default {
 
 	.logo {
 		color: $color-logo;
-		font: normal 1.75rem $font-logo;
+		font: normal 2.5rem $font-logo;
 		@media (min-width: $xtra-lrg-screen) {
-			font-size: 1.8vw;
+			font-size: 2.7rem;
 		}
 	}
 
 	.services--xl {
-		font-size: 18px;
+		font-size: 1.5rem;
 		@media (min-width: $xtra-lrg-screen) {
-			font-size: 1.2vw;
+			font-size: 1.7rem;
 		}
 	}
 

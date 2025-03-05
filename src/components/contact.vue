@@ -8,20 +8,13 @@
 						<p class="mail">
 							hello@<span style="display: none">eat this robot</span>noelynstephens.com
 						</p>
-						<p style="font-size: 16px">
-							<i class="fa fa-map-marker-alt fa-2x"></i><br />
-							Based in
-							<span style="text-decoration: underline">Illinois, USA</span>
-						</p>
-					</div>
-					<div class="contact--bottom">
-						<!-- <a href="https://twitter.com/confettibird" target="_blank"
-              ><i class="fab fa-twitter fa-2x"></i
-            ></a> -->
-						<!--<a href="https://www.instagram.com/nociostudios" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>-->
 						<a href="https://github.com/confettibird" target="_blank"
 							><i class="fab fa-github fa-2x"></i
 						></a>
+						<p style="font-size: 16px">
+							Based in
+							<span style="text-decoration: underline">Illinois, USA</span>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -44,12 +37,6 @@
 						/>
 					</defs>
 					<g class="parallax">
-						<!-- <use
-              xlink:href="#gentle-wave"
-              x="48"
-              y="0"
-              fill="rgba(255,255,255,0.7"
-            /> -->
 						<use
 							xlink:href="#gentle-wave"
 							x="48"
@@ -57,13 +44,20 @@
 							id="footer-wave"
 							:fill="color"
 						/>
-						<!-- <use xlink:href="#gentle-wave" x="48" y="5" fill="#f0faf9" /> -->
-						<!-- <use xlink:href="#gentle-wave" x="48" y="7" fill="#f0faf9" /> -->
 					</g>
 				</svg>
 			</div>
 			<!--Waves end-->
 		</div>
+		<div class="copyright-statement">
+			<div>Website created by me &#127800;</div>
+			<div>&#169; {{ new Date().getFullYear() }}</div>
+		</div>
+		<!-- <div class="footer-img-wrapper">
+			<div class="footer-img-relative">
+				<div class="footer-img"></div>
+			</div>
+		</div> -->
 	</div>
 </template>
 
@@ -101,20 +95,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#contact {
+	@include backgroundPttrn;
+}
 .section_body--contact {
 	height: 250px;
 }
+
 .slope--footer {
+	@include backgroundPttrn;
+
+	position: relative;
 	width: 100%;
 	height: max-content;
-	background-color: $color-light-0;
+	opacity: 1;
+
 	.waves {
 		position: relative;
 		width: 100%;
 		height: 150px;
 		margin-bottom: -7px; /*Fix for safari gap*/
-		// min-height: 100px;
-		// max-height: 150px;
+		z-index: 2; /*place this layer in front of footer-img*/
 	}
 	/* Animation */
 
@@ -175,20 +176,12 @@ export default {
 	.contact--top {
 		border: solid 1px $color-font;
 		background-color: #fdf3c8;
-		padding: 5%;
+		padding: 10% 5%;
 	}
-	.contact--bottom {
-		text-align: center;
-		width: 100%;
 
-		a {
-			margin: 5px;
-		}
-	}
 	i {
 		color: $color-font;
-		padding-top: 8%;
-		padding-bottom: 5%;
+		padding: 8%;
 	}
 	a {
 		text-decoration: none;
@@ -212,6 +205,72 @@ export default {
 	p.mail {
 		@media (max-width: $md-screen) {
 			font-size: 14px !important;
+		}
+	}
+}
+.copyright-statement {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+	position: absolute;
+	bottom: 0;
+	color: $color-logo;
+	font-family: $font-content;
+	z-index: 3;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.footer-img-wrapper {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	background: transparent;
+	overflow: hidden;
+
+	.footer-img-relative {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.footer-img {
+		position: absolute;
+		bottom: 0;
+		left: -100px;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color: $color-logo;
+		animation: swim 15s linear infinite;
+		animation-delay: 2s;
+	}
+	@keyframes swim {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(100%);
+		}
+
+		0%,
+		20% {
+			/* start lower down on the screen */
+			transform: translateY(0);
+			transform: translateX(0);
+		}
+		50%,
+		70% {
+			/* simulates pause -- move back to orginal y cordinate */
+			transform: translateY(-10px);
+			transform: translateX(50%);
+		}
+		90%,
+		100% {
+			/* move down */
+			transform: translateY(0);
+			transform: translateX(100%);
 		}
 	}
 }
