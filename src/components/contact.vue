@@ -50,7 +50,7 @@
 			<!--Waves end-->
 		</div>
 		<div class="copyright-statement">
-			<div>Website created by me &#127800;</div>
+			<div>Made by Noelyn Stephens with Vue.js</div>
 			<div>&#169; {{ new Date().getFullYear() }}</div>
 		</div>
 		<!-- <div class="footer-img-wrapper">
