@@ -2,7 +2,9 @@
 	<div class="header">
 		<div class="section__home">
 			<div class="leftHomePage">
-				<div class="logo itemA">Noelyn Stephens</div>
+				<div class="logo itemA">
+					<img src="/assets/img/svg/Logo.svg" alt="Noelyn Stephens" />
+				</div>
 				<div class="professions itemB"></div>
 				<div class="itemC">
 					<p class="text services--xl">Full-stack Development &amp; <br/>UI/UX Design</p>
@@ -13,7 +15,9 @@
 				id="home-page"
 				:style="{ backgroundColor: color }"
 			>
-				<div class="logo logo--mobile">Noelyn Stephens</div>
+				<div class="logo logo--mobile">
+					<img src="/assets/img/svg/Logo.svg" alt="Noelyn Stephens" />
+				</div>
 				<div class="hv-centered homeImg">
 					<div class="hv-centered sun-rise-container"><div class="sun"></div></div>
 				</div>
@@ -74,10 +78,14 @@ export default {
 		@media (min-width: $xtra-lrg-screen) {
 			font-size: 2.7rem;
 		}
+		img{
+			width: 75%;
+		}
 	}
 
 	.services--xl {
 		font-size: 1.5rem;
+		font-weight: bold;
 		@media (min-width: $xtra-lrg-screen) {
 			font-size: 1.7rem;
 		}
@@ -201,12 +209,16 @@ export default {
 				margin-top: 20%;
 				font-size: 1.2rem;
 			}
+			img {
+				width: 50%;
+			}
 		}
 
 		.services--mobile {
 			// position
 			position: absolute;
 			width: 100%;
+			font-weight: bold;
 			bottom: 10%;
 			left: 50%;
 			-webkit-transform: translate(-50%, -50%);
@@ -228,7 +240,7 @@ export default {
 			}
 			@media (max-width: $xsm-screen) {
 				/*margin-top: 10%;*/
-				font-size: 0.6rem;
+				font-size: 0.75rem;
 			}
 		}
 		.text.services--mobile {

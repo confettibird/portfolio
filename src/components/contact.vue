@@ -42,7 +42,7 @@
 							x="48"
 							y="3"
 							id="footer-wave"
-							:fill="color"
+							fill="#fad84c"
 						/>
 					</g>
 				</svg>
@@ -50,7 +50,7 @@
 			<!--Waves end-->
 		</div>
 		<div class="copyright-statement">
-			<div>Made by Noelyn Stephens with Vue.js</div>
+			<div>Made by me &#128526;</div>
 			<div>&#169; {{ new Date().getFullYear() }}</div>
 		</div>
 		<!-- <div class="footer-img-wrapper">
@@ -61,38 +61,6 @@
 	</div>
 </template>
 
-<script>
-export default {
-	data() {
-		let colors = ["#fdeeaf", "#fbe37e", "#fad84c", "#f9cd1a", "#dab106"];
-		// let colors = ["#027d83", "##026d83", "#025c83", "#024b83", "#023183"];
-		let start = 2;
-		return {
-			colors: colors,
-			color: colors[start],
-			index: start,
-			direction: 1,
-		};
-	},
-	methods: {
-		nextColor: function () {
-			if (this.index >= this.colors.length - 1) {
-				this.direction = -1;
-			}
-			if (this.index == 0) {
-				this.direction = 1;
-			}
-			this.index += this.direction;
-			this.color = this.colors[this.index];
-		},
-	},
-	mounted: function () {
-		window.setInterval(() => {
-			this.nextColor();
-		}, 1000);
-	},
-};
-</script>
 
 <style lang="scss" scoped>
 #contact {
