@@ -7,7 +7,9 @@
 				</div>
 				<div class="professions itemB"></div>
 				<div class="itemC">
-					<p class="text services--xl">Full-stack Development &amp; <br/>UI/UX Design</p>
+					<p class="text services--xl">
+						Full-stack Development &amp; <br />UI/UX Design
+					</p>
 				</div>
 			</div>
 			<div
@@ -21,7 +23,9 @@
 				<div class="hv-centered homeImg">
 					<div class="hv-centered sun-rise-container"><div class="sun"></div></div>
 				</div>
-				<div class="text services--mobile">Full-stack Development &amp; UI/UX Design</div>
+				<div class="text services--mobile">
+					Full-stack Development &amp; UI/UX Design
+				</div>
 			</div>
 		</div>
 	</div>
@@ -78,7 +82,7 @@ export default {
 		@media (min-width: $xtra-lrg-screen) {
 			font-size: 2.7rem;
 		}
-		img{
+		img {
 			width: 75%;
 		}
 	}
@@ -157,6 +161,10 @@ export default {
 				height: 350px;
 				background-color: $color-complement-light;
 				animation: 15s linear 0s infinite alternate sky;
+
+				@media (max-width: $sm-screen) {
+					height: 275px;
+				}
 			}
 
 			/* ---- default sunrise ---- */
@@ -166,6 +174,9 @@ export default {
 				height: 250px;
 				aspect-ratio: 1 / 1;
 				animation: 15s linear 0s infinite alternate sunrise-sunset;
+				@media (max-width: $sm-screen) {
+					height: 175px;
+				}
 			}
 			@keyframes sunrise-sunset {
 				from {
@@ -181,13 +192,13 @@ export default {
 					/* unset properties i.e. 'filter' will revert to default values */
 				}
 			}
-      
-      @keyframes sky {
+
+			@keyframes sky {
 				from {
 					background-color: #1e2b58;
 				}
 				to {
-					background-color: #71BCE1;
+					background-color: #71bce1;
 				}
 			}
 		}
@@ -211,6 +222,10 @@ export default {
 			}
 			img {
 				width: 50%;
+				@media (max-width: $sm-screen) {
+					width: 70%;
+					margin-top: 5%;
+				}
 			}
 		}
 
@@ -223,24 +238,24 @@ export default {
 			left: 50%;
 			-webkit-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
-			font-size: 1.1rem;
+			font-size: 1.28rem;
 			text-align: center;
 			display: none;
 			@media (max-width: $lrg-screen) {
 				display: block;
-				font-size: 1.2rem;
+				font-size: 1.27rem;
 			}
 			@media (max-width: $md-screen) {
 				/*margin-top: 10%;*/
-				font-size: 1.1rem;
+				font-size: 1.26rem;
 			}
 			@media (max-width: $sm-screen) {
 				/*margin-top: 10%;*/
-				font-size: 1rem;
+				font-size: 1.25rem;
 			}
 			@media (max-width: $xsm-screen) {
 				/*margin-top: 10%;*/
-				font-size: 0.75rem;
+				font-size: 1.2rem;
 			}
 		}
 		.text.services--mobile {
