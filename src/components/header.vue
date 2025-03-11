@@ -163,8 +163,8 @@ export default {
 				animation: 15s linear 0s infinite alternate sky;
 
 				@media (max-width: $sm-screen) {
-					height: 275px;
-					display: none;
+					height: 175px;
+					// display: none;
 				}
 			}
 
@@ -176,8 +176,8 @@ export default {
 				aspect-ratio: 1 / 1;
 				animation: 15s linear 0s infinite alternate sunrise-sunset;
 				@media (max-width: $sm-screen) {
-					height: 175px;
-					display: none;
+					height: 100px;
+					// display: none;
 				}
 			}
 			@keyframes sunrise-sunset {
