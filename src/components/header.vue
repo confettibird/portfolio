@@ -163,7 +163,9 @@ export default {
 				animation: 15s linear 0s infinite alternate sky;
 
 				@media (max-width: $sm-screen) {
-					height: 175px;
+					height: 225px;
+					background-color: transparent !important;
+					border-bottom: 2px solid $color-logo;
 				}
 			}
 
@@ -175,7 +177,7 @@ export default {
 				aspect-ratio: 1 / 1;
 				animation: 15s linear 0s infinite alternate sunrise-sunset;
 				@media (max-width: $sm-screen) {
-					height: 100px;
+					height: 150px;
 				}
 			}
 			@keyframes sunrise-sunset {
@@ -185,7 +187,7 @@ export default {
 					background-color: #ff0000;
 					filter: brightness(75%);
 					@media (max-width: $sm-screen) {
-						transform: translateY(100px);
+						transform: translateY(150px);
 					}
 				}
 				to {
