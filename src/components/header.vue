@@ -253,7 +253,7 @@ export default {
 				font-size: 1.26rem;
 			}
 			@media (max-width: $sm-screen) {
-				margin-top: 5%;
+				margin-top: 10%;
 				font-size: 1.25rem;
 			}
 			@media (max-width: $xsm-screen) {
