@@ -164,7 +164,6 @@ export default {
 
 				@media (max-width: $sm-screen) {
 					height: 175px;
-					// display: none;
 				}
 			}
 
@@ -177,7 +176,6 @@ export default {
 				animation: 15s linear 0s infinite alternate sunrise-sunset;
 				@media (max-width: $sm-screen) {
 					height: 100px;
-					// display: none;
 				}
 			}
 			@keyframes sunrise-sunset {
@@ -186,6 +184,9 @@ export default {
 					transform: translateY(250px);
 					background-color: #ff0000;
 					filter: brightness(75%);
+					@media (max-width: $sm-screen) {
+						transform: translateY(100px);
+					}
 				}
 				to {
 					/* returns the sun to its default position */
