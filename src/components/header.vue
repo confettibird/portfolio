@@ -164,6 +164,7 @@ export default {
 
 				@media (max-width: $sm-screen) {
 					height: 275px;
+					display: none;
 				}
 			}
 
@@ -176,6 +177,7 @@ export default {
 				animation: 15s linear 0s infinite alternate sunrise-sunset;
 				@media (max-width: $sm-screen) {
 					height: 175px;
+					display: none;
 				}
 			}
 			@keyframes sunrise-sunset {
