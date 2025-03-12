@@ -166,6 +166,11 @@ export default {
 					height: 225px;
 					background-color: transparent !important;
 					border-bottom: 2px solid $color-logo;
+					margin-bottom: 10%;
+				}
+				@media (max-width: $xsm-screen) {
+					height: 200px;
+					background-color: transparent !important;
 				}
 			}
 
